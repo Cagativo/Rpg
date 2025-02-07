@@ -165,7 +165,7 @@
         const startY = 0; // Start drawing quests from the top
         this._data.forEach((quest, i) => {
             const icon = quest.status === "available" ? "⚔️" : "✅"; // Use icons for status
-            const line = `${icon} ${quest.name}`;
+            const line = `${icon} \\c[1]${quest.name}\\c[0]`;
             const rect = new Rectangle(0, startY + i * (this.lineHeight() + 5), this.contents.width, this.lineHeight());
             
             // Highlight the selected quest
@@ -244,14 +244,24 @@
         this.contents.clear();
         if (this._quest) {
             this.drawTextEx(`\\c[1]${this._quest.name}\\c[0]`, 0, 0);
-            this.drawTextEx(`★ Difficulty: ${this._quest.rDifficulty}`, 0, this.lineHeight());
-            this.drawTextEx(`💰 Reward: ${this._quest.reward}`, 0, this.lineHeight() * 2);
+            this.drawTextEx(`★ Difficulty: ${this._quest.requiredRank}`, 0, this.lineHeight());
+            this.drawTextEx(`💰 Reward: ${this._quest.reward} G`, 0, this.lineHeight() * 2);
             this.drawTextEx(`📜 Description:`, 0, this.lineHeight() * 3);
-            this.drawWrappedText(this._quest.description, 0, this.lineHeight() * 4, this.contentsWidth());
+    
+            let descriptionY = this.lineHeight() * 4;
+            let description = this._quest.description;
+    
+            // If progress and goal exist, append them in the format (progress/goal)
+            if (this._quest.progress !== undefined && this._quest.goal !== undefined) {
+                description += ` (${this._quest.progress}/${this._quest.goal})`;
+            }
+    
+            this.drawWrappedText(description, 0, descriptionY, this.contentsWidth());
         } else {
             this.drawText("Select a quest to view details.", 0, 0, this.contentsWidth());
         }
     };
+    
 
     // Scene for Quests
     function Scene_Quests() {

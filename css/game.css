@@ -3,6 +3,14 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+html, canvas {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 #errorPrinter {
     position: absolute;

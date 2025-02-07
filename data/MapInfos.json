@@ -1,17 +1,17 @@
 [
 null,
-{"id":1,"expanded":true,"name":"Beginning","order":1,"parentId":0,"scrollX":1769.4545454545455,"scrollY":1006.909090909091},
-{"id":2,"expanded":true,"name":"MAP002","order":2,"parentId":1,"scrollX":811,"scrollY":461.5,"quick":false},
-{"id":3,"expanded":true,"name":"Forest Town","order":4,"parentId":6,"scrollX":973.1999999999999,"scrollY":1366.2,"quick":false},
-{"id":4,"expanded":false,"name":"Lost Forest","order":8,"parentId":5,"scrollX":1206,"scrollY":544.1999999999999,"quick":false},
-{"id":5,"expanded":true,"name":"Forest","order":7,"parentId":10,"scrollX":982.8,"scrollY":1279.8,"quick":false},
+{"id":1,"expanded":true,"name":"Beginning","order":1,"parentId":0,"scrollX":973.1999999999999,"scrollY":553.8},
+{"id":2,"expanded":true,"name":"MAP002","order":2,"parentId":1,"scrollX":973.1999999999999,"scrollY":553.8,"quick":false},
+{"id":3,"expanded":true,"name":"Forest Town","order":4,"parentId":6,"scrollX":982.8,"scrollY":694.1999999999999,"quick":false},
+{"id":4,"expanded":true,"name":"Lost Forest","order":8,"parentId":5,"scrollX":1206,"scrollY":640.1999999999999,"quick":false},
+{"id":5,"expanded":true,"name":"Forest","order":7,"parentId":10,"scrollX":973.1999999999999,"scrollY":553.8,"quick":false},
 {"id":6,"expanded":true,"name":"MAP003","order":3,"parentId":2,"scrollX":973.1999999999999,"scrollY":553.8,"quick":false},
 null,
 null,
 null,
-{"id":10,"expanded":true,"name":"MAP004","order":6,"parentId":6,"scrollX":811,"scrollY":461.5,"quick":false},
+{"id":10,"expanded":true,"name":"MAP004","order":6,"parentId":6,"scrollX":973.1999999999999,"scrollY":553.8,"quick":false},
 {"id":11,"expanded":true,"name":"Bar","order":5,"parentId":3,"scrollX":973.1999999999999,"scrollY":553.8,"quick":false},
 null,
 null,
-{"id":14,"expanded":false,"name":"Stone Cave","order":9,"parentId":4,"scrollX":973.1999999999999,"scrollY":982.1999999999999,"quick":false}
+{"id":14,"expanded":false,"name":"Stone Cave","order":9,"parentId":4,"scrollX":982.8,"scrollY":703.8,"quick":false}
 ]
